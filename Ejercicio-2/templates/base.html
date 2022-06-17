@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Inicio</title>
+<link rel="stylesheet" type="text/css"
+  href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="{{ url_for('index')}}">Inicio</a></li>
+<li><a href="{{ url_for('mostrarListadoCapita') }}">Top 10 emisión CO2 per capita</a></li>
+<li><a href="{{ url_for('mostrarListadoTotal')}}">Listado Total de emisión</a></li>
+<li><a href="{{ url_for('mostrarListadoPais', pais='Argentina') }}">Listado según País</a></li>
+
+<li><a href="{{ url_for('ayuda')}}">Ayuda</a></li>
+</ul>
+</nav>
+{% block titulo %}{% endblock %}
+{% block contenido %}{% endblock %}
+</body>
+</html>

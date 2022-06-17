@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block titulo %} 
+    <h1> Emisiones de {{pais}}</h1>
+  {% endblock %}
+{% block contenido %} 
+  <table border = 1 >    
+  <thead>
+            <td>Serie</td>
+            <td>Valor</td>
+      </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Series"]}}</td>
+               <td>{{row["Value"]}}</td>
+            </tr>
+         {% endfor %}
+  </table>
+{% endblock %}

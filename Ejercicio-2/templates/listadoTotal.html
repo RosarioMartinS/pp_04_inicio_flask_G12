@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+{% block titulo %} 
+<h1> Top 10 emisión de Co2 según total internacional</h1>
+  {% endblock %}
+{% block contenido %} 
+  <table border = 1 >    
+  <thead>
+            <td>País</td>
+            <td>Valor</td>
+      </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Country"]}}</td>
+               <td>{{row["Value"]}}</td>
+            </tr>
+         {% endfor %}
+  </table>
+{% endblock %}

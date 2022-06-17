@@ -1,0 +1,24 @@
+body {
+  font-family:Arial;
+}
+nav{
+  display: flex;
+  background-color:  #0077da;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+li {
+  display:inline;
+  list-style: none;
+  
+}
+li :hover{
+  background-color: #62b8ff;
+  
+}
+a{
+  text-decoration:none;
+  color: #ffffff;
+  margin: 30 px;
+  padding:30px;
+}
